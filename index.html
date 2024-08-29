@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FIGMA-LIST</title>
+</head>
+
+<body>
+    <header
+        class="w-full max-w-[1440px] pt-9 md:pt-0 mx-auto px-5  justify-center items-center gap-3   md:items-center md:justify-between flex  md:h-[100px]  bg-[rgba(246,246,246,1)]">
+        <div class="flex items-center">
+            <h1 class="font-bold text-blue-600 py-1 px-3 rounded-full bg-white">NAMANGANLIKLAR 24</h1>
+            <p class="hidden md:block">
+                <span class="text-blue-600">$</span> 10137.2
+                <span class="text-blue-600">P</span> 138.26
+            </p>
+        </div>
+        <div class="flex   items-center gap-3">
+            <div class="flex gap-2 items-center  text-base bg-white py-1 px-3 rounded-full">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="w-auto outline-none bg-transparent" placeholder="Search" type="text">
+            </div>
+            <div class="flex items-center justify-between w-full md:w-auto  gap-4">
+                <button id="lang" class="flex px-1 py-1 bg-[rgba(220,230,255,1)] rounded-full text-gray-400"><span id="uz"
+                        class="bg-white rounded-full px-2  py-1">УЗ</span> <span id="ru"
+                        class="px-2 py-1">РУ</span></button>
+            </div>
+            <button class="hidden md:block bg-blue-400 font-semibold text-white rounded-lg py-2 px-3">Войти</button>
+        </div>
+    </header>
+    <div class="max-w-[1440px] px-5 mx-auto flex flex-col gap-4">
+        <div
+            class=" border-slate-400 border-b-2 pb-3 mx-auto justify-center gap-3 md:w-4/5 flex flex-wrap font-semibold text-slate-700">
+            <p>Главное</p>
+            <p>Интересное</p>
+            <p>Экономика</p>
+            <p>Политика</p>
+            <p>Общество</p>
+            <p>Технологии</p>
+            <p>Спорт</p>
+            <p>Культура</p>
+            <p>Происшествия</p>
+            <p>Наука</p>
+        </div>
+        <div class="  flex justify-center">
+            <img class=" object-cover"
+                src="https://s3-alpha-sig.figma.com/img/3348/e0ca/0ac8ecee6b233bb28491c356360ceaf2?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SLp3Y6tP8MWaJGlqNNt9pRKrtCUyK74aZ-IZhDOzX5Vrbdmg1LPVxmZfAi7uRK05yHItsjoxJwSnm~EnWsSi1gmQScAYT5CZ6xsGFh6b8r7G3tPeCfZ1Bm03vcRojdzis3o3UYxGeaPkOhvKwo14XMCwFnmB-ljW5f-m1c0y8F6WLDkYbEaerp607og-Sxs~~ZVXW0gzDfpVGu8JN7TlaErbYWCaZO~9tw~uHJZPdSCH1x3N4uEc3LVmeQoh-ckNdgiwmHqj~XfoPwgiFXTat3Psssz8z7NgNDSqOm7EtxPxkLWM7njcZ9Bjl1IURMqkRuaT35R-UzO~KKVbv7bTnw__"
+                alt="">
+        </div>
+    </div>
+    <main>
+        <section class="max-w-[1440px] mx-auto px-5 mt-5">
+            <div>
+                <h1 class="text-2xl font-semibold">Интересное</h1>
+            </div>
+            <div class="cardALL gap-4 flex-col md:flex-row flex py-5 justify-center">
+                <div id="cards" class="flex-col flex gap-4 w-full md:w-4/6">
+                </div>
+                <div class="cardL w-full md:w-2/6   flex flex-col gap-3">
+                    <div class=" flex flex-col bg-gray-200 gap-4 p-3 rounded-3xl">
+                        <h1 class="text-2xl font-semibold">Главное</h1>
+                    <div class="border-gray-300  flex flex-col gap-3">
+                        <h1 class="font-semibold text-xl">В Фергане создадут узбекско-пакистанский университет</h1>
+                        <h3 class="text-slate-500">Sputnik Узбекистан 14:09</h3>
+                    </div>
+                    <div class="border-gray-300 border-t-2 pt-4 flex flex-col gap-3">
+                        <h1 class="font-semibold text-xl">Узбекистан утвердил соглашение о содействии занятости в странах СНГ</h1>
+                        <h3 class="text-slate-500">ИА Красная Весна 10:19</h3>
+                    </div>
+                    <div class="border-gray-300 border-t-2 pt-4 flex flex-col gap-3">
+                        <h1 class="font-semibold text-xl">В Узбекистане увеличиваются очереди за автомобилями UzAuto</h1>
+                        <h3 class="text-slate-500">Северная газета (Армянск) 13:50</h3>
+                    </div>
+                    <div class="border-gray-300 border-t-2 pt-4 flex flex-col gap-3">
+                        <h1 class="font-semibold text-xl">Минтуризма опровергло приостановку выплат за шаги</h1>
+                        <h3 class="text-slate-500">Sputnik Узбекистан 14:32</h3>
+                    </div>
+                    </div>
+                    <div>
+                      <img class="rounded-3xl" src="https://s3-alpha-sig.figma.com/img/8ca5/8507/1076f76162e5c855dfad8e38fe368f46?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FtLojAgSkPNrR0xn6vJiqcEOVnaGgcasnh1h~S0aP1zlGnU5L9QLNfmf5-6U5serGyVEKFdUARbw218jdCztsQxtjwzaP1R4at6LlUGJszfzN3redtbRsFOkwlYXm9dKFBh~5gGVBSz0E95DfSSoVa0sjB6pnzvjZ2UfwoPnAxXC6Rxy9wE-D5UX0kMhzL92bZpkOJJ2nPdmNXrOZtpKqRmW9cZUo028ENuryYCL5cxwT9ZMlb4EftRfJP~eJaxK1GxfM4BD70Ymu7g8QKBOxwTJfF5ER1tPnmvejI3VHYFwhQSdDCEqkiEeKI8jkDU7-gpY7oGu19L9NDTjrAqsxw__" alt="">
+                    </div>                     
+                </div>
+            </div>
+<div class=" md:w-4/6">
+    <button class="bg-gray-200 w-full py-3 px-3 rounded-md font-bold">Показать ещё </button>
+
+</div>
+        </section>
+    </main>
+    <footer class="max-w-[1440px] text-xs text-white bg-blue-600 p-4 mx-auto px-5 mt-5">
+<h1 class="text-4xl w-full font-bold">NAMANGANLIKLAR 24</h1>
+<div class="grid grid-cols-1 md:grid-cols-3 py-4 gap-4">
+    <div>
+        <p>Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
+        </p>
+    </div>
+    <div class="flex flex-col gap-2">
+        <p>Информация о сайте</p>
+        <p>Напишите нам</p>
+        <p>Реклама</p>
+        <p>Прислать новость</p>
+    </div>
+    <div class="flex flex-col gap-2">
+        <p>Использование материалов</p>
+        <p>Темы дня</p>
+        <p>Наша команда</p>
+    </div>
+</div>
+<div class="flex text-xl  justify-between">
+        <h1>Наши социальные сети</h1>
+    <p class="flex items-center gap-3">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </p>
+</div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
